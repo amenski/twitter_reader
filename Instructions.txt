@@ -1,0 +1,41 @@
+Provide us with the source, instructions to build and run the application, as well as a sample output of an execution:
+The applicaiton is console application and there are 2 modes to run it.
+1. The traditional way with "java -jar"
+	- Change directory(cd) in to the folder of the application source code
+	- Run `mvn clean package"
+	- Issue `java -jar bieber-tweets-1.0.0-SNAPSHOT`
+	- Follow the on screen instructions
+2. From docker container
+	- Build the applicaiton `mvn clean package`
+	- Build docker image `docker build -t exercise .`
+	- And run it interactive mode `docker run -it exercise`
+	- Follow the on screen instructions
+	
+	
+	
+Docker samplSample output:
+ashiferaw@develvm:~/Desktop/Java-amenski$ docker run -it exercise
+Aquired temporary token...
+
+Go to the following link in your browser:
+https://api.twitter.com/oauth/authorize?oauth_token=vNRZ4QAAAAAAt7ElAAABfW2jNUA
+
+Please enter the retrieved PIN:
+0255192
+
+Authorization was successful
+Started reading messages.
+Processing messages done!
+[{"id":"1465435309131317257","createdAt":1638221978000,"text":"Fashion icon Virgil Abloh is honoured by a host of stars including Hailey Bieber, Pharrell Williams and Marc Jacobs https://t.co/Ee9f60QiIn","author":{"id":"111556701","name":"Daily Mail Celebrity","screenName":"DailyMailCeleb","createdAt":1265365203000}}]
+[{"id":"1465435379130146821","createdAt":1638221995000,"text":"RT @kingmxmus: que risa rubius bieber https://t.co/HqGLU7YKsI","author":{"id":"933531799367639040","name":"Majo","screenName":"MCastleS_","createdAt":1511406299000}}]
+[{"id":"1465435360574513164","createdAt":1638221991000,"text":"RT @UpdateKBoys: O Kai (EXO) foi eleito a pessoa mais influente no mundo da moda este ano! Destaca-se o sucesso que sua coleção com a Gucci…","author":{"id":"705850126720491525","name":"Ane","screenName":"ane_araujo06","createdAt":1457122759000}}]
+[{"id":"1465435354819973129","createdAt":1638221989000,"text":"Umas das músicas do Bieber q mais me identifico, e quando tô triste é minha trilha sonora.\nhttps://t.co/87XaqTTixL","author":{"id":"1418042531628081160","name":"mih🦋","screenName":"badlierbieber","createdAt":1626922669000}}]
+[{"id":"1465435314298802178","createdAt":1638221980000,"text":"RT @kidraurshl: eu seria assim se fosse casada com justin bieber https://t.co/iIiGZCPbuk","author":{"id":"1334653905796554752","name":"Ceci","screenName":"euceciilia_","createdAt":1607041289000}}]
+[{"id":"1465435350906458115","createdAt":1638221988000,"text":"RT @balencigarette: hailey bieber’s wedding dress designed by virgil abloh \u0026lt;3 the first wedding dress he designed and ended up being one of…","author":{"id":"1449581700623716352","name":"---:--:---:------:---:-----:","screenName":"fallfoam","createdAt":1634442194000}}]
+[{"id":"1465435386377908226","createdAt":1638221997000,"text":"taylor: maybe we got lost in translation","author":{"id":"895013850529095680","name":"nana","screenName":"forbesfearless","createdAt":1502222905000}}]
+[{"id":"1465435322733547522","createdAt":1638221982000,"text":"PASSANDO MAL COM O PODER DO GATO","author":{"id":"1386137520090537986","name":"victor. 🍑","screenName":"keymnesia","createdAt":1619315924000}}]
+[{"id":"1465435383873916930","createdAt":1638221996000,"text":"#Nowplaying  Hold On by Justin Bieber Escucha #lamega105 #buenamusica","author":{"id":"369729629","name":"lamega105","screenName":"lamega105miami","createdAt":1315429549000}}]
+[{"id":"1465435383550955529","createdAt":1638221996000,"text":"RT @UpdateKBoys: O Kai (EXO) foi eleito a pessoa mais influente no mundo da moda este ano! Destaca-se o sucesso que sua coleção com a Gucci…","author":{"id":"1116878109326880770","name":"✨⋈ leт ᴿᵘˢʰ ᴴᵒᵘʳ 🏆🏆🏆","screenName":"leetschmidt","createdAt":1555119466000}}]
+[{"id":"1465435286373085195","createdAt":1638221973000,"text":"#NowPlaying\nJustin Bieber - What Do You Mean? \n\nhttps://t.co/hKZF1uCKmi","author":{"id":"2418387878","name":"Coca-Cola FM Brasil","screenName":"radiococacolaFM","createdAt":1396150549000}}]
+[{"id":"1465435304874188805","createdAt":1638221977000,"text":"me fue más fácil alcanzar platino con Justin Bieber que boletos para spiderman 😩😩","author":{"id":"1259193140436783111","name":"hynjeon 🎄레히나 ☃️","screenName":"reginqaa_","createdAt":1589050084000}}]
+finished executing
